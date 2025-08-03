@@ -1,4 +1,5 @@
 import ListaPostagens from "../../components/postagens/listapostagens/ListaPostagens"
+import ModalPostagem from "../../components/postagens/modalpostagem/ModalPostagem"
 
 function Home() {
 
@@ -20,7 +21,7 @@ function Home() {
                                             border-white border-solid
                                             border-2 py-2 px-4'
                                 >
-                                Nova Postagem
+                                <ModalPostagem/>
                             </div>
                         </div>
                     </div>

@@ -42,6 +42,7 @@ function FormTema() {
         }
     }, [id])
 
+    /*Essa parte está ligada com o Login.tsx? */
     function atualizarEstado(e: ChangeEvent<HTMLInputElement>) {
         setTema({
             ...tema,
@@ -49,6 +50,7 @@ function FormTema() {
         })
     }
 
+    
     function retornar() {
         navigate("/temas")
     }
