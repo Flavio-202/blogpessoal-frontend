@@ -1,4 +1,4 @@
-import { useState, useContext, useEffect, ChangeEvent } from "react";
+import { useState, useContext, useEffect, type ChangeEvent } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { AuthContext } from "../../../contexts/AuthContext";
 import type Postagem from "../../../models/Postagem";
