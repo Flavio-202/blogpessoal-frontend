@@ -64,6 +64,7 @@ function Login() {
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
                     </div>
+
                     <button
                         type='submit'
                         className="rounded bg-indigo-400 flex justify-center
@@ -81,13 +82,13 @@ function Login() {
                     </button>
 
                     <hr className="border-slate-800 w-full" />
-
                     <p>
                         Ainda não tem uma conta?{' '}
                         <Link to="/cadastro" className="text-indigo-800 hover:underline">
                             Cadastre-se
                         </Link>
                     </p>
+                    
                 </form>
                 <div className="fundoLogin hidden lg:block"></div>
             </div>

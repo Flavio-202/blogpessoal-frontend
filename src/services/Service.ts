@@ -4,16 +4,20 @@ const api = axios.create({
     baseURL: 'https://blog-pessoal-4o42.onrender.com'
 })
 
+/*Aqui faz parte do cadasyro do usuario*/
 export const cadastrarUsuario = async(url: string, dados: Object, setDados: Function) =>{
     const resposta = await api.post(url, dados)
     setDados(resposta.data)
 }
 
+/*Aqui faz parte do login do usuario*/
 export const login = async(url: string, dados: Object, setDados: Function) =>{
     const resposta = await api.post(url, dados)
     setDados(resposta.data)
 }
 
+
+/* Apartir daqui é o CRUD*/
 export const buscar = async(url: string, setDados: Function, header: Object) => {
     const resposta =  await api.get(url, header)
     setDados(resposta.data)
